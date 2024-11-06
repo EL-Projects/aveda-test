@@ -26,6 +26,7 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: normal;
 }
 
 ul,
@@ -41,6 +42,7 @@ img {
 
 body {
   background-color: #ddd9ce;
+  font-weight: normal;
 }
 
 .list {
@@ -397,6 +399,7 @@ input[type=radio]:checked + .custom-radio::after {
     line-height: 0.8;
     padding-left: 16px;
     letter-spacing: 0;
+    font-weight: 500;
   }
   .main-page-text {
     font-family: "Montserrat", sans-serif;
@@ -440,6 +443,7 @@ input[type=radio]:checked + .custom-radio::after {
     font-family: "Moniqa-BoldCondensedDisplay";
     font-size: 50px;
     margin-top: 40px;
+    font-weight: 500;
   }
   .catalogue-list {
     justify-content: center;
