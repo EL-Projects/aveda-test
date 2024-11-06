@@ -513,7 +513,7 @@ input[type=radio]:checked + .custom-radio::after {
     text-align: center;
     font-family: "Moniqa-BoldCondensedDisplay";
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 500;
   }
   .technology-list-item {
     margin-top: 24px;
