@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="section">
+      <div class="header">
+        <div class="logo">
+          <a href="./index.html" class="logo-link link">Aveda</a>
+        </div>
+        <nav class="header-nav">
+          <ul class="header-nav-list list">
+            <li class="header-nav-item">
+              <a href="./index.html" class="header-nav-item-link link">Home</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="../shop.html" class="header-nav-item-link link">Shop</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="" class="header-nav-item-link link">About</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="" class="header-nav-item-link link">Event</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <div class="cart-icon-wrapper">
+            <span class="cart-icon" onclick="location.href='cart.html'"
+              ><svg class="icon" width="30px" height="30px">
+                <use href="./img/icon.svg#bag_icon"></use></svg
+            ></span>
+            <span class="cart-badge" id="cart-badge"></span>
+          </div>
+          <a href="./cart.html" class="cart-link link"> </a>
+          <button type="button" class="mobile-menu-open-btn" data-menu-open>
+            <svg class="mobile-menu-open-btn" width="18px" height="16px">
+              <use href="./img/icon.svg#mobile-icon-open"></use>
+            </svg>
+          </button>
+          <!-- <a href="./cart.html" class="cart-link link"> </a> -->
+        </div>
+        <div class="mobile-menu" data-menu>
+          <div class="container mobile-menu__container">
+            <button
+              type="button"
+              class="mobile-menu__close-btn"
+              data-menu-close
+            >
+              <svg class="mobile-menu__close-icon" width="18px" height="16px">
+                <use href="./img/icon.svg#mobile-icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu-list list">
+              <li class="mobile-menu__item">
+                <a
+                  class="mobile-menu__link link current"
+                  href="./index.html"
+                ></a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href=""></a>
+              </li>
+
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href=""></a>
+              </li>
+
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href=""></a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href=""></a>
+              </li>
+              <li class="mobile-menu__item mobile-menu-contacts">
+                <a class="mobile-menu__link link" href="#"></a>
+              </li>
+            </ul>
+
+            <ul class="mobile-menu-contacts-list list">
+              <li class="mobile-menu-contacts__item">
+                <a class="mobile-menu-contacts__link-tel link" href=""></a>
+              </li>
+              <li class="mobile-menu-contacts__item">
+                <a class="mobile-menu-contacts__link-mail link" href=""> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Section 1 Main -->
+      <section class="section-main">
+        <div class="main">
+          <h1 class="main-title">Aveda</h1>
+          <p class="main-page-text">
+            Welcome to Aveda – Where Beauty Meets Environmental Harmony! <br />
+            <br />
+            Discover the essence of eco-conscious beauty with Aveda,
+            <br class="only-tablet" />a brand that seamlessly blends nature and
+            luxury. Our commitment to environmental responsibility is as
+            deep-rooted as the botanicals we use in our products.
+          </p>
+          <form class="main-button-form" action="./shop.html">
+            <button class="main-button btn" type="submit">Shop now</button>
+          </form>
+        </div>
+      </section>
+      <!-- Section 2 Catalogue -->
+      <section class="section-catalogue section">
+        <div class="catalogue">
+          <h2 class="catalogue-title">The Most Beloved</h2>
+          <ul class="catalogue-list list">
+            <li class="catalogue-list-item">
+              <div class="catalogue-list-item-card">
+                <a href="./shop/eco_soap.html">
+                  <img
+                    class="catalogue-list-item-card-img"
+                    src="./img/eco_soap.png"
+                    alt=""
+                /></a>
+                <div class="catalogue-list-item-card-info">
+                  <p class="catalogue-list-item-card-text">Eco soap</p>
+                  <p class="catalogue-list-item-card-price">19,99€</p>
+                  <form
+                    class="catalogue-button-form"
+                    action="./shop/eco_soap.html"
+                  >
+                    <button class="catalogue-button btn" type="submit">
+                      Shop now
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </li>
+            <li class="catalogue-list-item">
+              <div class="catalogue-list-item-card">
+                <a href="./shop/body_brush.html">
+                  <img
+                    class="catalogue-list-item-card-img"
+                    src="./img/body_brush.png"
+                    alt=""
+                /></a>
+                <div class="catalogue-list-item-card-info">
+                  <p class="catalogue-list-item-card-text">Body brush</p>
+                  <p class="catalogue-list-item-card-price">29,99€</p>
+                  <form
+                    class="catalogue-button-form"
+                    action="./shop/body_brush.html"
+                  >
+                    <button class="catalogue-button btn" type="submit">
+                      Shop now
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </li>
+            <li class="catalogue-list-item catalogue-hide">
+              <div class="catalogue-list-item-card">
+                <img
+                  class="catalogue-list-item-card-img"
+                  src="./img/eco_bath_bomb.png"
+                  alt=""
+                />
+                <div class="catalogue-list-item-card-info">
+                  <p class="catalogue-list-item-card-text">Eco bath bomb</p>
+                  <p class="catalogue-list-item-card-price">9,99€</p>
+                  <form
+                    class="catalogue-button-form"
+                    action="./shop/eco_bath_bomb.html"
+                  >
+                    <button class="catalogue-button btn" type="submit">
+                      Shop now
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Section 3 About -->
+      <section class="">
+        <div>
+          <h2 class="about-title">ABOUT US</h2>
+          <ul class="about-list list">
+            <li class="about-list-item">
+              <div class="about-list-wrapper">
+                <h3 class="about-subtitle">+ Mission</h3>
+                <p class="about-list-text">
+                  Explore the roots of AVEDA and the journey that led to the
+                  creation of eco-conscious beauty. Learn about our commitment
+                  to sustainability, cruelty-free practices, and the vision
+                  behind our nature-inspired formulas.
+                </p>
+              </div>
+            </li>
+            <li class="about-list-item">
+              <div class="about-list-wrapper">
+                <h3 class="about-subtitle">+ Nature Formulas</h3>
+                <p class="about-list-text">
+                  Discover the transformative power of our nature-inspired
+                  formulas. Each product is a testament to our dedication to
+                  harnessing the best that nature has to offer. Immerse yourself
+                  in a beauty experience where botanical richness meets
+                  cutting-edge skincare technology.
+                </p>
+              </div>
+            </li>
+            <li class="about-list-item">
+              <div class="about-list-wrapper">
+                <h3 class="about-subtitle">+ Eco Commitment</h3>
+                <p class="about-list-text">
+                  Our commitment to the environment extends beyond product
+                  formulation. From responsibly sourced ingredients to
+                  eco-friendly packaging, every step of our production process
+                  is guided by a deep sense of responsibility.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Section 4 Technology -->
+      <section class="section">
+        <div class="technology">
+          <h2 class="technology-title">How it work?</h2>
+          <ul class="technology-list list">
+            <li class="technology-list-item">
+              <div class="technology-list-wrapper">
+                <img
+                  class="technology-item-img"
+                  src="./img/ellipse_1.png"
+                  alt=""
+                />
+                <p class="technology-item-text">
+                  Nourishment <br />
+                  from Nature
+                </p>
+              </div>
+            </li>
+            <li class="technology-list-item">
+              <div class="technology-list-wrapper">
+                <img
+                  class="technology-item-img"
+                  src="./img/ellipse_2.png"
+                  alt=""
+                />
+                <p class="technology-item-text">
+                  Gentle and Clean <br />
+                  Beauty
+                </p>
+              </div>
+            </li>
+            <li class="technology-list-item">
+              <div class="technology-list-wrapper">
+                <img
+                  class="technology-item-img"
+                  src="./img/ellipse_3.png"
+                  alt=""
+                />
+                <p class="technology-item-text">
+                  Sustainability Beyond <br />
+                  Beauty
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Section 5 Products -->
+      <section class="">
+        <div class="main-page-products">
+          <div class="products-wrapper">
+            <h2 class="products-title">Honey & Beeswax Soap</h2>
+            <p class="products-text">
+              This soap is meticulously formulated to provide a gentle and
+              moisturizing cleansing experience. Honey, renowned for its
+              hydrating properties, helps to retain skin moisture and promote a
+              soft, supple complexion.
+            </p>
+
+            <button class="products-button btn" type="button">Shop now</button>
+          </div>
+          <!-- <div class="products-image">
+            <img
+              class="products-image-img"
+              srcset="./img/products_img.png"
+              src="./img/products_img-mobile.png 375w"
+              alt=""
+              width=""
+            />
+          </div> -->
+          <div class="products-image">
+            <picture class="logotip">
+              <source
+                media="(max-width: 1023px)"
+                srcset="img/products_img-mobile.png"
+              />
+              <source
+                media="(min-width: 1024px)(max-width:1919px)"
+                srcset="img/products_img-tablet.png"
+              />
+              <source
+                media="(min-width: 1920px)"
+                srcset="img/products_img.png"
+              />
+              <img
+                class="products-image-img"
+                src="img/products_img.png"
+                alt="Реставрація ванн"
+              />
+            </picture>
+          </div>
+          <!-- <div class="products-image"">
+            
+            <img
+              class="products-image-img"
+              srcset="
+                ./img/products_img-mobile.png  375vw,
+                ./img/products_img.png 1024vw
+              "
+              src="./img/products_img-mobile.png "
+              alt=""
+            />
+          </div> -->
+        </div>
+      </section>
+      <!-- Test shop -->
+      <!-- <div class="products"> -->
+      <!-- <div class="products">
+          <p>Товар 1</p>
+          <p>
+            Начальная цена:
+            <span class="base-price" id="base-price-1">100</span> €
+          </p>
+          <div class="multipliers">
+            <label>
+              <input
+                type="radio"
+                name="multiplier-1"
+                value="1"
+                checked
+                onchange="updateDisplayedPrice(1)"
+              />
+              Множитель 1
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="multiplier-1"
+                value="2"
+                onchange="updateDisplayedPrice(1)"
+              />
+              Множитель 2
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="multiplier-1"
+                value="3"
+                onchange="updateDisplayedPrice(1)"
+              />
+              Множитель 3
+            </label>
+          </div>
+          <div class="quantity-controls">
+            <button onclick="decreaseQuantity(1)">-</button>
+            <span id="quantity-1">1</span>
+            <button onclick="increaseQuantity(1)">+</button>
+          </div>
+          <p class="total-price" id="total-price-1">Итоговая цена: 100 €</p>
+          <button class="button" data-id="1" data-price="100">
+            Добавить в корзину
+          </button>
+        </div> -->
+      <!-- товар 2 -->
+      <!-- <div class="product">
+          <p>Товар 2</p>
+          <p>
+            Начальная цена:
+            <span class="base-price" id="base-price-2">200</span> €
+          </p>
+          <div class="multipliers">
+            <label>
+              <input
+                type="radio"
+                name="multiplier-2"
+                value="1"
+                checked
+                onchange="updateDisplayedPrice(2)"
+              />
+              Множитель 1
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="multiplier-2"
+                value="2"
+                onchange="updateDisplayedPrice(2)"
+              />
+              Множитель 2
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="multiplier-2"
+                value="3"
+                onchange="updateDisplayedPrice(2)"
+              />
+              Множитель 3
+            </label>
+          </div>
+          <div class="quantity-controls">
+            <button onclick="decreaseQuantity(2)">-</button>
+            <span id="quantity-2">1</span>
+            <button onclick="increaseQuantity(2)">+</button>
+          </div>
+
+          <p class="total-price" id="total-price-2">Итоговая цена: 200 €</p>
+          <button class="button" data-id="2" data-price="19.99">
+            Добавить в корзину
+          </button>
+        </div> -->
+      <!-- Товар 3 -->
+      <!-- <div class="product">
+          <p>Товар 3</p>
+          <p>
+            Начальная цена:
+            <span class="base-price" id="base-price-3">300</span> €
+          </p>
+          <div class="multipliers">
+            <label>
+              <input
+                type="radio"
+                name="multiplier-3"
+                value="1"
+                checked
+                onchange="updateDisplayedPrice(3)"
+              />
+              Множитель 1
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="multiplier-3"
+                value="2"
+                onchange="updateDisplayedPrice(3)"
+              />
+              Множитель 2
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="multiplier-3"
+                value="3"
+                onchange="updateDisplayedPrice(3)"
+              />
+              Множитель 3
+            </label>
+          </div>
+          <div class="quantity-controls">
+            <button onclick="decreaseQuantity(3)">-</button>
+            <span id="quantity-3">1</span>
+            <button onclick="increaseQuantity(3)">+</button>
+          </div>
+          <p class="total-price" id="total-price-3">Итоговая цена: 100 €</p>
+          <button class="button" data-id="3" data-price="300">
+            Добавить в корзину
+          </button>
+        </div> -->
+      <!-- </div> -->
+
+      <!-- Иконка корзины -->
+      <!-- <div class="cart-icon-wrapper">
+        <span class="cart-icon" onclick="location.href='cart.html'">🛒</span>
+        <span class="cart-badge" id="cart-badge">0</span>
+      </div> -->
+    </main>
+    <!-- Footer -->
+
+    <footer class="section">
+      <div class="footer">
+        <div class="footer-without-copyright">
+          <div class="footer-list-wrapper">
+            <h2 class="footer-list-title">Shop</h2>
+            <ul class="footer-list list">
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href=""
+                  >Shipping & Returns
+                </a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">Payments</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">FAQ</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href=""
+                  >Privacy Policy
+                </a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href=""
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-list-wrapper">
+            <h2 class="footer-list-title">The Company</h2>
+            <ul class="footer-list list">
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">Cotacts</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">Stockists</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-list-wrapper footer-margin">
+            <h2 class="footer-list-title">The Comunity</h2>
+            <ul class="footer-list list">
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">Investors</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">Beauty guide</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-list-wrapper footer-margin">
+            <h2 class="footer-list-title">Follow us</h2>
+            <ul class="footer-list list">
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">Facebook</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">Instagram</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">Youtube </a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">Pinterest</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="copyright-text">© AVEDA Cosmetics 2024</p>
+      </div>
+    </footer>
+    <script src="./js/mobile.js"></script>
+    <script src="./js/cart.js"></script>
+  </body>
+</html>

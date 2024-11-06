@@ -1,0 +1,341 @@
+@media screen and (min-width: 375px) and (max-width: 1023px) {
+  .technology-item-img {
+    max-width: 200px;
+  }
+  // .products-image-img {
+  //   max-width: 343px;
+  // }
+  .header {
+    display: flex;
+  }
+  .catalogue-hide {
+    display: none;
+  }
+  .section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header-nav-item-link {
+    display: none;
+  }
+
+  .logo-link {
+    font-family: "Moniqa-BoldCondensedDisplay";
+    font-size: 20px;
+  }
+  .header-nav-list {
+  }
+  .header {
+    min-height: 33px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cart-link {
+  }
+  .cart-icon-wrapper {
+    right: 90px;
+    position: relative;
+    float: right;
+  }
+  .cart-icon-wrapper {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    position: absolute;
+    top: -7px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+    padding: 4px 8px;
+    font-size: 18px;
+  }
+  .cart-badge {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+    padding: 4px 8px;
+    font-size: 18px;
+  }
+  .icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+  }
+
+  .header-nav-item-link {
+  }
+  .header-nav-item:not(:last-child) {
+  }
+  .main-title {
+    font-family: "Moniqa-BoldCondensedDisplay";
+    padding-top: 149px;
+    font-size: 80px;
+    line-height: 0.8;
+    padding-left: 16px;
+    letter-spacing: 0;
+  }
+  .main-page-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 272px;
+  }
+
+  .main {
+    background-image: url(./../img/main-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 217px;
+  }
+  .main-button {
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    text-align: center;
+    align-items: center;
+    min-width: 162px;
+    background-color: #423c3c;
+    font-size: 10px;
+    border: none;
+    outline: none;
+    color: #f8f2f2;
+    &:hover,
+    &:focus {
+      background-color: #9d9292;
+      color: #f8f2f2;
+    }
+  }
+
+  .main-button-form {
+    margin-top: 40px;
+    padding-left: 16px;
+  }
+
+  .catalogue-title {
+    font-family: "Moniqa-BoldCondensedDisplay";
+    font-size: 50px;
+    margin-top: 40px;
+  }
+  .catalogue-list {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .catalogue-list-item {
+    margin-top: 24px;
+  }
+  .catalogue-list-item:first-child {
+    margin-right: 20px;
+  }
+  .catalogue-list-item-card-img {
+    max-width: 161px;
+    border: black 0.5px solid;
+  }
+  .catalogue-list-item-card {
+  }
+  .catalogue-list-item-card-text {
+    margin-top: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+  }
+  .catalogue-list-item-card-price {
+    margin-top: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .catalogue-list-item-card-info {
+  }
+  .catalogue-button-form {
+    display: none;
+  }
+  .catalogue-button {
+  }
+
+  .about-title {
+    margin-bottom: 24px;
+    padding-left: 16px;
+    margin-top: 40px;
+    font-family: "Moniqa-BoldCondensedDisplay";
+    font-size: 50px;
+    font-weight: 500;
+  }
+  .about-subtitle {
+    margin-top: 12px;
+    padding-left: 16px;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
+  .about-list {
+  }
+
+  .about-list-item {
+    border-bottom: #000000 1px solid;
+    &:not(:first-child) {
+      border-bottom: #000000 1px solid;
+    }
+    &:first-child {
+      border-top: #000000 1px solid;
+    }
+  }
+
+  .about-list-wrapper {
+  }
+  .about-list-text {
+    padding-right: 16px;
+    padding-left: 43px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+
+    font-size: 14px;
+  }
+
+  .technology-title {
+    margin-top: 40px;
+    text-align: center;
+    font-family: "Moniqa-BoldCondensedDisplay";
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .technology-list {
+  }
+  .technology-list-item {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .technology-item-text {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .main-page-products {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .products-wrapper {
+  }
+  .products-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 40px;
+    max-width: 252px;
+  }
+  .products-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #000000;
+  }
+  .products-button {
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    align-items: center;
+    min-width: 272px;
+    background-color: #423c3c;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #f8f2f2;
+    &:hover,
+    &:focus {
+      background-color: #9d9292;
+      color: #f8f2f2;
+    }
+  }
+  .products-button {
+    margin-top: 32px;
+  }
+  .products-image {
+    margin-top: 32px;
+  }
+  .products-image-img {
+    width: 100%;
+  }
+  .footer-without-copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-list-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+
+  .footer-list-item-link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .footer-list-item {
+    margin-right: 20px;
+  }
+  .footer-list-wrapper {
+    display: block;
+    min-width: 161px;
+  }
+  .footer-list-item:not(:last-child) {
+  }
+  // .footer-list-wrapper:nth-child(2n + 1) {
+  //   margin-right: 20px;
+  // }
+  .copyright {
+  }
+  .copyright-text {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  .footer-without-copyright :nth-child(1) {
+    order: 1;
+  }
+  .footer-without-copyright :nth-child(2) {
+    order: 3;
+  }
+  .footer-without-copyright :nth-child(3) {
+    order: 4;
+  }
+  .footer-without-copyright :nth-child(4) {
+    order: 2;
+  }
+
+  .footer-margin {
+    margin-left: 20px;
+  }
+  .cart-icon-wrapper.shifted {
+    right: 30px; /* Или любое другое свойство для смещения */
+    transition: right 0.3s ease; /* Плавный переход для изменения позиции */
+  }
+  .mobile-menu-open-button {
+    position: relative;
+    top: 10px;
+    left: 55px;
+  }
+}

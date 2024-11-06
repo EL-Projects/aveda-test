@@ -1,0 +1,361 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+// .montserrat-<uniquifier > {
+//   font-family: "Montserrat", sans-serif;
+//   font-optical-sizing: auto;
+//   font-weight: <weight>;
+//   font-style: normal;
+// }
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 18/10),
+  only screen and (min-resolution: 170dpi) {
+  /* Even higher DPI devices */
+  body {
+    font-size: 100%;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  // font-family: "Roboto", sans-serif;
+  background-color: #ddd9ce;
+  font-weight: normal;
+}
+
+.list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  cursor: pointer;
+}
+/* Убедитесь, что нет специфических стилей для Safari */
+body {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased; /* Если используется, временно отключите */
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Moniqa-BoldCondensedDisplay";
+  src: url(../fonts/Moniqa-BoldCondensedDisplay.ttf) format("truetype"),
+    url(../fonts/moniqa-display.woff) format("woff"),
+    url(../fonts/moniqa-display.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.footer-list-title {
+  text-transform: uppercase;
+}
+
+// mobile menu
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d9d9d9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity 500ms linear, visibility 500ms linear;
+  z-index: 20;
+}
+
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  // background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+  fill: #000;
+
+  &:hover,
+  &:focus {
+    fill: #423c3c;
+  }
+}
+.mobile-menu__item {
+  margin-bottom: 20px;
+  // border-bottom: 3px solid #423c3c;
+}
+
+.mobile-menu__link {
+  font-size: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000;
+  &:hover,
+  &:focus {
+    color: #423c3c;
+  }
+
+  &.current {
+    color: #423c3c;
+  }
+}
+.mobile-icon-close {
+  fill: #000000;
+}
+.mobile-menu-open-btn {
+  // margin-left: 10px;
+  // margin-top: 10px;
+  // margin-bottom: auto;
+  // margin-right: -10px;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  line-height: 0;
+  cursor: pointer;
+  padding: 0;
+
+  &:hover,
+  &:focus {
+    fill: yellowgreen;
+  }
+  .mobile-menu-list {
+    margin-top: 48px;
+  }
+}
+.mobile-menu-open-btn {
+  fill: #000000;
+}
+.mobile-menu-contacts-list {
+  margin-top: 50px;
+}
+@media screen and (min-width: 1023px) {
+  .mobile-menu-open-btn {
+    display: none;
+  }
+}
+
+// mobile devices
+
+@media screen and (max-width: 1919px) {
+  .catalogue-hide {
+    display: none;
+  }
+}
+// desktop
+
+.cart-icon-wrapper {
+  // right: 90px;
+  position: relative;
+  float: right;
+}
+
+.cart-icon {
+  font-size: 30px;
+  cursor: pointer;
+  color: #007bff;
+  fill: #000000;
+}
+
+.cart-badge {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  position: absolute;
+  top: 0px;
+  right: -60px;
+  background-color: transparent;
+  color: black;
+  // border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 25px;
+}
+
+.minus-button {
+  text-decoration: none;
+  position: relative;
+  bottom: 2px;
+  font-size: 48px;
+  margin-right: 47px;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  display: block;
+}
+.plus-button {
+  text-decoration: none;
+  font-size: 48px;
+  margin-left: 48px;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  display: block;
+}
+.product-quantity {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+.visually-hidden {
+  display: none;
+}
+
+.quantity-controls {
+  display: flex;
+}
+
+.total-price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 70px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.products {
+  justify-content: space-between;
+}
+
+.button-div {
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.cart-icon {
+  position: absolute;
+  left: -40px;
+}
+
+.header-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.radio-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+/* Стили для кастомного радио-круга */
+/* Скрываем стандартную радио-кнопку через opacity, чтобы не нарушить поведение */
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Стили для кастомного радио-круга */
+.custom-radio {
+  // display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding-left: 50px;
+  font-size: 40px;
+}
+
+.custom-radio::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: border-color 0.3s ease;
+}
+
+/* Стили для активного состояния радио-кнопки */
+input[type="radio"]:checked + .custom-radio::before {
+  border-color: #000;
+  background-color: #000;
+}
+
+/* Стили для внутренней точки */
+.custom-radio::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+input[type="radio"]:checked + .custom-radio::after {
+  transform: translateY(-50%) scale(1);
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Bag</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="section cart-header">
+      <div class="header">
+        <div>
+          <a href="./index.html" class="logo-link link">Aveda</a>
+        </div>
+        <nav class="header-nav">
+          <ul class="header-nav-list list">
+            <li class="header-nav-item">
+              <a href="./index.html" class="header-nav-item-link link">Home</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="../shop.html" class="header-nav-item-link link">Shop</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="" class="header-nav-item-link link">About</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="" class="header-nav-item-link link">Event</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <div class="cart-icon-wrapper">
+            <span class="cart-icon" onclick="location.href='cart.html'"
+              ><svg class="icon" width="30px" height="30px">
+                <use href="./img/icon.svg#bag_icon"></use></svg
+            ></span>
+            <span class="cart-badge" id="cart-badge"></span>
+          </div>
+
+          <a href="./cart.html" class="cart-link link"> </a>
+
+          <button type="button" class="mobile-menu-open-btn" data-menu-open>
+            <svg class="mobile-menu-open-btn" width="18px" height="16px">
+              <use href="./img/icon.svg#mobile-icon-open"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-menu" data-menu>
+          <div class="container mobile-menu__container">
+            <button
+              type="button"
+              class="mobile-menu__close-btn"
+              data-menu-close
+            >
+              <svg class="mobile-menu__close-icon" width="18px" height="16px">
+                <use href="./img/icon.svg#mobile-icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu-list list">
+              <li class="mobile-menu__item">
+                <a
+                  class="mobile-menu__link link current"
+                  href="./index.html"
+                ></a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href=""></a>
+              </li>
+
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href=""></a>
+              </li>
+
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href=""></a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href=""></a>
+              </li>
+              <li class="mobile-menu__item mobile-menu-contacts">
+                <a class="mobile-menu__link link" href="#"></a>
+              </li>
+            </ul>
+
+            <ul class="mobile-menu-contacts-list list">
+              <li class="mobile-menu-contacts__item">
+                <a class="mobile-menu-contacts__link-tel link" href=""></a>
+              </li>
+              <li class="mobile-menu-contacts__item">
+                <a class="mobile-menu-contacts__link-mail link" href=""> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="header-container"> -->
+      <!-- <div class="cart-info"> -->
+      <!-- <span>Товаров в корзине: <span id="cart-badge">0</span></span> -->
+      <!-- <a href="index.html" class="btn-back">To main</a> -->
+      <!-- </div> -->
+      <!-- </div> -->
+    </header>
+    <h1 class="shopping-bag-title">Shopping Bag</h1>
+    <main id="cart" class="cart-main">
+      <div id="cart-items" class="cart-items"></div>
+      <!-- <button id="checkout" class="btn-clear" style="background-color: #28a745">
+        Оплатить
+      </button> -->
+
+      <div>
+        <div id="cart-total" class="cart-total">Total: 0 €.</div>
+
+        <!-- <button id="clear-cart" class="btn-clear">Очистить корзину</button> -->
+      </div>
+    </main>
+    <footer class="section cart-footer">
+      <div class="footer">
+        <div class="footer-without-copyright">
+          <div class="footer-list-wrapper">
+            <h2 class="footer-list-title">Shop</h2>
+            <ul class="footer-list list">
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href=""
+                  >Shipping & Returns
+                </a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">Payments</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">FAQ</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href=""
+                  >Privacy Policy
+                </a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href=""
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-list-wrapper">
+            <h2 class="footer-list-title">The Company</h2>
+            <ul class="footer-list list">
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">Cotacts</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">Stockists</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-list-wrapper footer-margin">
+            <h2 class="footer-list-title">The Comunity</h2>
+            <ul class="footer-list list">
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">Investors</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">Beauty guide</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-list-wrapper footer-margin">
+            <h2 class="footer-list-title">Follow us</h2>
+            <ul class="footer-list list">
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">Facebook</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">Instagram</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">Youtube </a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-list-item-link link" href="">Pinterest</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="copyright-text">© AVEDA Cosmetics 2024</p>
+      </div>
+    </footer>
+    <script src="./js/mobile.js"></script>
+    <script src="./js/cart.js"></script>
+  </body>
+</html>

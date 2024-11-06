@@ -1,0 +1,247 @@
+.eco-soap-images-list {
+  display: flex;
+}
+
+.eco-soap-main-images-list-item {
+  border-top: #000 1px solid;
+  border-bottom: #000 1px solid;
+  border-right: #000 1px solid;
+  border-left: #000 1px solid;
+  width: 890px;
+}
+.eco-soap-product-card {
+  display: flex;
+}
+
+.eco-soap-top-products-list {
+  display: flex;
+  justify-content: space-between;
+}
+.eco-soap-top-products-list-item {
+  display: block;
+  border: #000 1px solid;
+  width: 435px;
+  max-height: 334px;
+  min-height: 334px;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.eco-soap-top-products-list-item:not(:last-child) {
+  margin-right: 20px;
+}
+.eco-soap-top-products-list-img {
+  width: initial;
+  margin: auto;
+  height: 100%;
+}
+.eco-soap-top-products-list-info {
+  margin-top: 20px;
+}
+.eco-soap-product-card-text {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 30px;
+
+  font-weight: 400;
+}
+.card-header {
+  border-bottom: #000 1px solid;
+}
+.card-footer {
+  margin-top: 100px;
+  border-top: #000 1px solid;
+}
+.eco-soap-top-products-title {
+  font-family: "Moniqa-BoldCondensedDisplay";
+  font-weight: 400;
+  font-size: 110px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+.eco-soap-top-products-list {
+}
+.eco-soap-top-products-name {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 22px;
+  font-size: 28px;
+
+  font-weight: 200;
+}
+.eco-soap-top-products-price {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 30px;
+  font-weight: 400;
+}
+.eco-soap-product-description-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+
+  font-size: 90px;
+}
+.eco-soap-top-products-button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin-top: 19px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  background-color: #423c3c;
+  font-size: 28px;
+  border: none;
+  outline: none;
+  color: #f8f2f2;
+  &:hover,
+  &:focus {
+    background-color: #9d9292;
+    color: #f8f2f2;
+  }
+}
+.eco-soap-product-description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 19px;
+}
+.eco-soap-product-description-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  margin-top: 40px;
+  max-width: 890px;
+  // margin-bottom: 117px;
+}
+.eco-soap-weigth-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+  // margin-left: 20px;
+}
+.eco-soap-weigth-checkbox:not(:first-child) {
+  margin-left: 50px;
+}
+.eco-soap-product-calculation {
+}
+.eco-soap-product-calculation-input {
+  font-size: 50px;
+}
+.eco-soap-product-calculation-price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 70px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.eco-soap-products-images-list {
+  min-height: 1195px;
+}
+.eco-soap-images-list-item {
+  min-height: 375px;
+}
+.eco-soap-main-image {
+  object-fit: cover;
+}
+.eco-soap-main-add-images {
+}
+
+.eco-button-div {
+  display: flex;
+}
+.eco-soap-button-list-item:not(:last-child) {
+  margin-right: 20px;
+}
+.eco-soap-list-shop-button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  max-height: 120px;
+  padding-top: 42px;
+  padding-bottom: 43px;
+  text-align: center;
+  align-items: center;
+  width: 435px;
+  margin-right: 20px;
+
+  background-color: #423c3c;
+  font-size: 28px;
+  border: none;
+  outline: none;
+  color: #f8f2f2;
+  &:hover,
+  &:focus {
+    background-color: #9d9292;
+    color: #f8f2f2;
+  }
+}
+
+.eco-soap-list-wish-button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  max-height: 120px;
+  padding-top: 42px;
+  padding-bottom: 43px;
+  text-align: center;
+  align-items: center;
+  width: 435px;
+  border: #000 1px solid;
+
+  background-color: transparent;
+  font-size: 28px;
+  outline: none;
+  color: #000;
+  &:hover,
+  &:focus {
+    background-color: #423c3c;
+    color: #f8f2f2;
+  }
+}
+.eco-soap-add-images-list {
+  min-height: 375px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-right: #000 1px solid;
+  border-bottom: #000 1px solid;
+}
+.eco-soap-add-images-list-item {
+  border-left: #000 1px solid;
+}
+
+.eco-soap-add-images-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eco-soap-weigth {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.quantity-controls {
+  margin-top: 290px;
+}
+// .without-weight {
+//   margin-top: 465px;
+// }
+// .body_brush_quantity {
+//   margin-top: 0;
+// }
+.eco-soap-product-calculation-input {
+  margin-top: 117px;
+}
+.body-brush-space-between {
+  margin-bottom: 0;
+}
+.eco-soap-space-between {
+  margin-bottom: 117px;
+}
+.body-brush-quantity-space-between {
+  margin-top: 310px;
+}
